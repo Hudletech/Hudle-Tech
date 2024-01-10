@@ -1,4 +1,11 @@
-@import "https://fonts.googleapis.com/css?family=Poppins:400,500,700&display=swap";
+@font-face{
+  font-family: 'MyWebFont';
+  src: url('WebFont.eot');
+  src: url('WebFont.eot?#iefix') format('embedded-opentype'),
+  url('WebFont.woff') format('woff'),
+  url('WebFont.ttf') format('truetype'),
+  url('WebFont.svg#webfont') format('svg');
+  }
 /*!
  * Bootstrap v4.3.1 (https://getbootstrap.com/)
  * Copyright 2011-2019 The Bootstrap Authors
