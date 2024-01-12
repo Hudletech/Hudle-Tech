@@ -116,7 +116,7 @@ var paymentForm = document.getElementById("paymentForm");
 paymentForm.addEventListener("submit", payWithPaystack, false);
 function payWithPaystack() {
   var handler = PaystackPop.setup({
-    key: "pk_live_eb383dd3d61565673e3cae24dcad96fe068fda07", // Replace with your public key
+    key: "pk_live_a27c105c31976ede29642dc8164ebf9b9f6fb03b", // Replace with your public key
     email: document.getElementById("email-address").value,
     amount: cost.total * 100,
     currency: "NGN", // Use GHS for Ghana Cedis or USD for US Dollars
@@ -131,7 +131,7 @@ function payWithPaystack() {
     },
     callback: function (response) {
       $.ajax({
-        url: "https://efosa42.github.io/ReeksGrill/cart.html",
+        url: "https://hudletech.github.io/Hudle-Tech/survey.html",
         method: "get",
         success: function (response) {
           // the transaction status is in response.data.status
@@ -139,7 +139,7 @@ function payWithPaystack() {
       });
     },
     callback: function (response) {
-      window.location = "https://efosa42.github.io/ReeksGrill/cart.html";
+      window.location = "https://hudletech.github.io/Hudle-Tech/survey.html";
     },
     //
     onClose: function () {
