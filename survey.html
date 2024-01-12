@@ -3,7 +3,7 @@
   <head>
     <title>Hudle Technology</title>
     <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="viewport" content="width=device-width, initial-scale=0.8" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <link
       rel="stylesheet"
@@ -18,14 +18,21 @@
     <link rel="stylesheet" href="vendors/aos/css/aos.css" />
     <link rel="stylesheet" href="css/style.min.css" />
     <!-----CSS------->
-    <link rel="stylesheet" href="stylesheet.css" type="text/css" charset="utf-8" />
+    <link
+      rel="stylesheet"
+      href="stylesheet.css"
+      type="text/css"
+      charset="utf-8"
+    />
+    <!------------CART CSS---------->
+    <link rel="stylesheet" href="styles.css" />
   </head>
   <body id="body" data-spy="scroll" data-target=".navbar" data-offset="100">
     <header id="header-section">
       <nav class="navbar navbar-expand-lg pl-3 pl-sm-0" id="navbar">
         <div class="container">
           <div class="navbar-brand-wrapper d-flex w-100">
-            <img src="images/logos/logo2.png" alt="" />
+            <img src="images/logos/logo5.png" alt="" />
             <button
               class="navbar-toggler ml-auto"
               type="button"
@@ -89,11 +96,54 @@
                   >Survey <span class="sr-only">(current)</span></a
                 >
               </li>
+              <li class="nav-item btn-contact-us pl-4 pl-lg-0">
+                <a href="https://wa.me/message/TVWBMAG3BNWDH1"
+                  ><button class="button-2" role="button">
+                    <span class="mdi mdi-whatsapp"> Contact Us</span>
+                  </button></a
+                >
+              </li>
             </ul>
           </div>
         </div>
       </nav>
     </header>
+
+    <style>
+      /* CSS */
+      .button-2 {
+        background-color: #03798e;
+        border-radius: 8px;
+        border-style: none;
+        box-sizing: border-box;
+        color: white;
+        cursor: pointer;
+        display: inline-block;
+        font-family: "Haas Grot Text R Web", "Helvetica Neue", Helvetica, Arial,
+          sans-serif;
+        font-size: 14px;
+        font-weight: 500;
+        height: 40px;
+        line-height: 20px;
+        list-style: none;
+        margin: 0;
+        outline: none;
+        padding: 10px 16px;
+        position: relative;
+        text-align: center;
+        text-decoration: none;
+        transition: color 100ms;
+        vertical-align: baseline;
+        user-select: none;
+        -webkit-user-select: none;
+        touch-action: manipulation;
+      }
+
+      .button-2:hover,
+      .button-2:focus {
+        background-color: #ffa132;
+      }
+    </style>
 
     <!-- Smartsupp Live Chat script -->
     <script type="text/javascript">
@@ -126,270 +176,304 @@
           Take Our Survey and Get the Perfect Online Solution.
         </h6>
       </div>
-      <img src="images/s1.png" alt="" class="img-fluid" />
+      <img src="images/survey/s1.png" alt="" class="img-fluid" />
     </div>
-    <div class="content-wrapper">
-      <div class="container">
-        <div class="content-wrapper">
-          <div class="container">
-            <section class="features-overview" id="features-section">
-              <div class="content-header">
-                <h6 class="section-subtitle text-muted">
-                  Before we begin the survey, briefly introduce yourself and
-                  your business. We'd love to hear about your goals and any
-                  specific website requirements you have.
-                </h6>
-              </div>
-            </section>
+    <!--------About your business--------->
+    <form action="" id="paymentForm" target="">
+      <div class="content-wrapper">
+        <div class="container">
+          <section class="features-overview" id="features-section">
+            <div class="content-header">
+              <h2><b>How It Works</b></h2>
+              <h6 class="section-subtitle text-muted">
+                Before we begin the survey, briefly introduce yourself and your
+                business. We'd love to hear about your goals and any specific
+                website requirements you have.
+              </h6>
+            </div>
+          </section>
 
-            <form>
-              <div class="input-group mb-3">
-                <span class="input-group-text"
-                  ><label for="floatingInputGroup1">Name</label></span
-                >
-                <div class="form-floating">
-                  <input
-                    type="text"
-                    class="form-control"
-                    id="floatingInputGroup1"
-                    placeholder="Full Name"
-                  />
-                </div>
-              </div>
-              <div class="input-group mb-3">
-                <span class="input-group-text"
-                  ><label for="floatingInputGroup1">Email</label></span
-                >
-                <div class="form-floating">
-                  <input
-                    type="mail"
-                    class="form-control"
-                    id="floatingInputGroup1"
-                    placeholder="Email Address"
-                  />
-                </div>
-              </div>
+          <br />
 
-              <div class="input-group mb-3">
-                <span class="input-group-text"
-                  ><label for="floatingInputGroup1">Phone</label></span
-                >
-                <div class="form-floating">
-                  <input
-                    type="text"
-                    class="form-control"
-                    id="floatingInputGroup1"
-                    placeholder="Phone Number"
-                  />
-                </div>
-              </div>
+          <label for="name">Full Name:</label>
+          <input
+            type="text"
+            class="form-control"
+            id="first-name"
+            name="name"
+            placeholder="Full Name"
+            required=""
+          />
+          <br />
+          <label for="email">Email Address:</label>
+          <input
+            type="email"
+            class="form-control"
+            id="email-address"
+            name="email"
+            placeholder="Email Address"
+            required
+          />
+          <br />
+          <label for="phone">Phone Number:</label>
+          <input
+            type="digit"
+            class="form-control"
+            id="phone"
+            name="phone"
+            placeholder="Phone Number"
+            required=""
+          />
+
+          <br />
+          <label for="Address"
+            >Tell us a little about your business; Your business name, the size,
+            location, what your business is about and give us any other
+            necessary information:
+          </label>
+          <textarea
+            id="address"
+            class="form-control"
+            name="address"
+            placeholder="About your business"
+            required=""
+          ></textarea>
+          <br />
+          <br />
+          <!---===============================================================================-->
+          <h6 class="section-subtitle text-muted" style="text-align: center">
+            Take a survey and add required web features to your shopping Cart.
+          </h6>
+
+          <br />
+          <!-----================================ONE==================================================-->
+          <div class="nice-select">
+            <span class=""><b>1.</b></span>
+            <br />
+            <br />
+            <span class="shop-item-price" style="color: white">₦10000</span>
+            <span class="shop-item-title">Pages</span>
+
+            <center>
+              <img class="shop-item-image" src="images/survey/pages2.png" />
+            </center>
+            <br />
+            <center>
+              <p>Add the amount of webpages you want to your website</p>
               <br />
-              <div class="mb-3">
-                <label for="exampleFormControlTextarea1" class="form-label"
-                  >Tell us a little about your business; your business name, the
-                  size, location, what your business is about and give us any
-                  other necessary information:</label
-                >
-                <textarea
-                  class="form-control"
-                  placeholder="type in texts here"
-                  id="exampleFormControlTextarea1"
-                  rows="3"
-                ></textarea>
-              </div>
               <br />
+              <br />
+            </center>
+
+            <center>
+              <button class="button-2 shop-item-button" type="button">
+                ADD PAGES
+              </button>
+            </center>
+          </div>
+
+          <!---====TWO================================================-->
+          <div class="nice-select">
+            <br />
+            <hr />
+            <span class=""><b>2.</b></span>
+            <br />
+            <br />
+            <span class="shop-item-price" style="color: white">₦15000</span>
+            <span class="shop-item-title">Livechat</span>
+
+            <center>
+              <img class="shop-item-image" src="images/survey/chatbot2.png" />
+            </center>
+            <br />
+            <center>
               <p>
-                1. What are the number of pages you would want on your website?
+                Do you want a live chat system on your website?
+                <br />
+                ( if yes specifications and other terms would be discussed after
+                payment )
               </p>
-
-              <div class="form-check form-switch">
-                <input
-                  class="form-check-input"
-                  type="checkbox"
-                  role="switch"
-                  id="flexSwitchCheckDefault"
-                />
-                <label class="form-check-label" for="flexSwitchCheckDefault"
-                  >1 Page</label
-                >
-              </div>
-
-              <div class="form-check form-switch">
-                <input
-                  class="form-check-input"
-                  type="checkbox"
-                  role="switch"
-                  id="flexSwitchCheckDefault"
-                />
-                <label class="form-check-label" for="flexSwitchCheckDefault"
-                  >2 - 5 Pages</label
-                >
-              </div>
-
-              <div class="form-check form-switch">
-                <input
-                  class="form-check-input"
-                  type="checkbox"
-                  role="switch"
-                  id="flexSwitchCheckDefault"
-                />
-                <label class="form-check-label" for="flexSwitchCheckDefault"
-                  >5 - 10 Pages</label
-                >
-              </div>
-
-              <div class="form-check form-switch">
-                <input
-                  class="form-check-input"
-                  type="checkbox"
-                  role="switch"
-                  id="flexSwitchCheckDefault"
-                />
-                <label class="form-check-label" for="flexSwitchCheckDefault"
-                  >10 - 15 Pages</label
-                >
-              </div>
-
-              <div class="form-check form-switch">
-                <input
-                  class="form-check-input"
-                  type="checkbox"
-                  role="switch"
-                  id="flexSwitchCheckDefault"
-                />
-                <label class="form-check-label" for="flexSwitchCheckDefault"
-                  >15 - 20 Pages</label
-                >
-              </div>
-
-              <div class="form-check form-switch">
-                <input
-                  class="form-check-input"
-                  type="checkbox"
-                  role="switch"
-                  id="flexSwitchCheckDefault"
-                />
-                <label class="form-check-label" for="flexSwitchCheckDefault"
-                  >20 - 25 Pages</label
-                >
-              </div>
-
               <br />
-
-              <p>2. Do you want a livechat system on your website?</p>
-
-              <div class="form-check form-switch">
-                <input
-                  class="form-check-input"
-                  type="checkbox"
-                  role="switch"
-                  id="flexSwitchCheckDefault"
-                />
-                <label class="form-check-label" for="flexSwitchCheckDefault"
-                  >Yes, I do</label
-                >
-              </div>
-
-              <div class="form-check form-switch">
-                <input
-                  class="form-check-input"
-                  type="checkbox"
-                  role="switch"
-                  id="flexSwitchCheckDefault"
-                />
-                <label class="form-check-label" for="flexSwitchCheckDefault"
-                  >No, I don't</label
-                >
-              </div>
-
               <br />
-
-              <p>3. Do you already have a purchased domain name?</p>
-
-              <div class="form-check form-switch">
-                <input
-                  class="form-check-input"
-                  type="checkbox"
-                  role="switch"
-                  id="flexSwitchCheckDefault"
-                />
-                <label class="form-check-label" for="flexSwitchCheckDefault"
-                  >Yes</label
-                >
-              </div>
-
-              <div class="form-check form-switch">
-                <input
-                  class="form-check-input"
-                  type="checkbox"
-                  role="switch"
-                  id="flexSwitchCheckDefault"
-                />
-                <label class="form-check-label" for="flexSwitchCheckDefault"
-                  >No</label
-                >
-              </div>
-
               <br />
+            </center>
 
+            <center>
+              <button class="button-2 shop-item-button" type="button">
+                YES
+              </button>
+            </center>
+
+            <br />
+            <center>
+              <button class="button-2" type="button">NO</button>
+            </center>
+          </div>
+
+          <!---====THREE================================================-->
+          <div class="nice-select">
+            <br />
+            <hr />
+            <span class=""><b>3.</b></span>
+            <br />
+            <br />
+            <span class="shop-item-price" style="color: white">₦65000</span>
+            <span class="shop-item-title">Hosting & Domain</span>
+            <center>
+              <img class="shop-item-image" src="images/survey/h11.png" />
+            </center>
+            <br />
+            <center>
               <p>
-                -if NO, would you like us to help you come up with a domain name
-                that would best suite your brand?
+                Would you like us to help you purchase a suitable web hosting
+                and a domain name that best serves your brand?
+                <br />ie; ( saying no means you already own a domain name and an
+                active hosting plan )
               </p>
-
-              <div class="form-check form-switch">
-                <input
-                  class="form-check-input"
-                  type="checkbox"
-                  role="switch"
-                  id="flexSwitchCheckDefault"
-                />
-                <label class="form-check-label" for="flexSwitchCheckDefault"
-                  >Yes, I would</label
-                >
-              </div>
-
-              <div class="form-check form-switch">
-                <input
-                  class="form-check-input"
-                  type="checkbox"
-                  role="switch"
-                  id="flexSwitchCheckDefault"
-                />
-                <label class="form-check-label" for="flexSwitchCheckDefault"
-                  >No, I'll come up with one myself</label
-                >
-              </div>
-
               <br />
+              <br />
+              <br />
+            </center>
 
-              <p>4. Do you already have a paid for and active webhosting?</p>
+            <center>
+              <button class="button-2 shop-item-button" type="button">
+                YES
+              </button>
+            </center>
 
-              <div class="form-check form-switch">
-                <input
-                  class="form-check-input"
-                  type="checkbox"
-                  role="switch"
-                  id="flexSwitchCheckDefault"
-                />
-                <label class="form-check-label" for="flexSwitchCheckDefault"
-                  >Yes, I do</label
-                >
-              </div>
+            <br />
+            <center>
+              <button class="button-2" type="button">NO</button>
+            </center>
+          </div>
 
-              <div class="form-check form-switch">
-                <input
-                  class="form-check-input"
-                  type="checkbox"
-                  role="switch"
-                  id="flexSwitchCheckDefault"
-                />
-                <label class="form-check-label" for="flexSwitchCheckDefault"
-                  >No, I don't</label
-                >
-              </div>
-            </form>
+          <!---====FOUR================================================-->
+          <div class="nice-select">
+            <br />
+            <hr />
+            <span class=""><b>4.</b></span>
+            <br />
+            <br />
+            <span class="shop-item-price" style="color: white">₦30000</span>
+            <span class="shop-item-title">Hosting</span>
 
+            <center>
+              <img class="shop-item-image" src="images/survey/h10.png" />
+            </center>
+            <br />
+            <center>
+              <p>Do you aim for your website to be a high traffic site?</p>
+              <br />
+              <br />
+              <br />
+            </center>
+
+            <center>
+              <button class="button-2 shop-item-button" type="button">
+                YES
+              </button>
+            </center>
+            <br />
+            <center>
+              <button class="button-2" type="button">NO</button>
+            </center>
+          </div>
+
+          <!---====FIVE================================================-->
+          <div class="nice-select">
+            <br />
+            <hr />
+            <span class=""><b>5.</b></span>
+            <br />
+            <br />
+            <span class="shop-item-price" style="color: white">₦10000</span>
+            <span class="shop-item-title">Webmail</span>
+
+            <center>
+              <img class="shop-item-image" src="images/survey/webmail.jpg" />
+            </center>
+            <br />
+            <center>
+              <p>
+                Would you want a webmail for your website? <br />( this is a
+                customized email address for your website/business )
+              </p>
+              <br />
+              <br />
+              <br />
+            </center>
+
+            <center>
+              <button class="button-2 shop-item-button" type="button">
+                YES
+              </button>
+            </center>
+            <br />
+            <center>
+              <button class="button-2" type="button">NO</button>
+            </center>
+          </div>
+
+          <!---====SIX================================================-->
+          <div class="nice-select">
+            <br />
+            <hr />
+            <span class=""><b>6.</b></span>
+            <br />
+            <br />
+            <span class="shop-item-price" style="color: white">₦100000</span>
+            <span class="shop-item-title">Backend</span>
+
+            <center>
+              <img class="shop-item-image" src="images/survey/s2.png" />
+            </center>
+            <br />
+            <center>
+              <p>
+                Would your website include a backend? <br />ie; a login page,
+                dashboard etc ( this can not be included for a one page website
+                )
+              </p>
+              <br />
+              <br />
+              <br />
+            </center>
+
+            <center>
+              <button class="button-2 shop-item-button" type="button">
+                YES
+              </button>
+            </center>
+            <br />
+            <center>
+              <button class="button-2" type="button">NO</button>
+            </center>
+          </div>
+
+          <br />
+          <br />
+          <!-----Shopping Cart------->
+          <section class="container content-section">
+            <h2 class="section-header">CART</h2>
+            <hr />
+            <div class="cart-row">
+              <span class="cart-item cart-header cart-column">ITEM</span>
+              <span class="cart-price cart-header cart-column">PRICE</span>
+              <span class="cart-quantity cart-header cart-column"
+                >QUANTITY</span
+              >
+            </div>
+            <div class="cart-items"></div>
+            <div class="cart-total">
+              <strong class="cart-total-title">Total</strong>
+              <span class="cart-total-price">₦0</span>
+            </div>
+            <!------------Shopping Cart-------------->
+            <center>
+              <button class="button-2" onclick="payWithPaystack()">
+                Pay Now
+              </button>
+            </center>
             <!---SURVEY SECTION ENDS----->
             <br />
             <br />
@@ -478,9 +562,44 @@
                 <footer class="border-top">
                   <p class="text-center text-muted pt-4">
                     Copyright ©2022-2024
-                    <b style="font-family: blanka">Hudle Technology</b>. All
-                    rights reserved.
+                    <b>Hudle Technology</b>. All rights reserved.
                   </p>
+
+                  <style>
+                    /* CSS */
+                    .button-2 {
+                      background-color: #03798e;
+                      border-radius: 8px;
+                      border-style: none;
+                      box-sizing: border-box;
+                      color: white;
+                      cursor: pointer;
+                      display: inline-block;
+                      font-family: "Haas Grot Text R Web", "Helvetica Neue",
+                        Helvetica, Arial, sans-serif;
+                      font-size: 14px;
+                      font-weight: 500;
+                      height: 40px;
+                      line-height: 20px;
+                      list-style: none;
+                      margin: 0;
+                      outline: none;
+                      padding: 10px 16px;
+                      position: relative;
+                      text-align: center;
+                      text-decoration: none;
+                      transition: color 100ms;
+                      vertical-align: baseline;
+                      user-select: none;
+                      -webkit-user-select: none;
+                      touch-action: manipulation;
+                    }
+
+                    .button-2:hover,
+                    .button-2:focus {
+                      background-color: #03798e;
+                    }
+                  </style>
                 </footer>
 
                 <!---JS section-->
@@ -489,11 +608,19 @@
                 <script src="vendors/owl-carousel/js/owl.carousel.min.js"></script>
                 <script src="vendors/aos/js/aos.js"></script>
                 <script src="js/landingpage.js"></script>
+                <!-----Paystack payment gateway-->
+                <script
+                  src="https://code.jquery.com/jquery-3.3.1.js"
+                  integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60="
+                  crossorigin="anonymous"
+                ></script>
+                <script src="https://js.paystack.co/v1/inline.js"></script>
+                <script src="app.js"></script>
               </div>
             </div>
-          </div>
+          </section>
         </div>
       </div>
-    </div>
+    </form>
   </body>
 </html>
