@@ -131,7 +131,7 @@ function payWithPaystack() {
     },
     callback: function (response) {
       $.ajax({
-        url: "https://hudletech.github.io/Hudle-Tech/survey.html",
+        url: "https://hudletech.github.io/Hudle-Tech/blog.html",
         method: "get",
         success: function (response) {
           // the transaction status is in response.data.status
@@ -139,7 +139,7 @@ function payWithPaystack() {
       });
     },
     callback: function (response) {
-      window.location = "https://hudletech.github.io/Hudle-Tech/survey.html";
+      window.location = "https://hudletech.github.io/Hudle-Tech/blog.html";
     },
     //
     onClose: function () {
