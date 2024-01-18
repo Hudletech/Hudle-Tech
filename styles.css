@@ -24,7 +24,7 @@ html, body {
 .nav a {
     display: inline-block;
     padding: .5em;
-    color: white;
+    color: #1E161E;
     text-decoration: none;
 }
 
@@ -57,7 +57,7 @@ html, body {
     font-size: 4em;
     font-family: "Booter - Zero Zero";
     font-weight: bold;
-    color: white;
+    color: #1E161E;
 }
 
 .section-header {
@@ -78,7 +78,7 @@ html, body {
 
 .btn-header {
     margin: .5em 15% 2em 15%;
-    color: white;
+    color: #1E161E;
     border: 2px solid #2D9CDB;
     background-color: rgba(255, 255, 255, .1);
     border-radius: 0;
@@ -105,7 +105,7 @@ html, body {
 }
 
 .btn-primary {
-    color: white;
+    color: #1E161E;
     background-color: #56CCF2;
     border: none;
     border-radius: .3em;
@@ -230,7 +230,7 @@ html, body {
 }
 
 .btn-danger {
-    color: white;
+    color: #1E161E;
     background-color: #EB5757;
     border: none;
     border-radius: .3em;

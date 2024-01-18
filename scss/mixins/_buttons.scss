@@ -5,25 +5,25 @@
   transition: all 0.5s ease-in-out;
   &:hover {
     color: $color;
-    background-color: white;
+    background-color: #1E161E;
     border: 2px solid $color;
   }
 }
 
 @mixin btn-outline-variant($color) {
   color: $color;
-  background-color: white;
+  background-color: #1E161E;
   border: 2px solid $color;
   transition: all 0.5s ease-in-out;
   &:hover {
-    color: white;
+    color: #1E161E;
     background-color: $color;
   }
 }
 
 @mixin btn-variant($color) {
   transition: all 0.5s ease-in-out;
-  color: white;
+  color: #1E161E;
   &:hover {
     background: transparent;
     color: $color;
