@@ -6,12 +6,12 @@
   &.btn-rounded {
     border-radius: 50px;
   }
-  &.btn-#1E161E {
-    background: #1E161E;
+  &.btn-white {
+    background: white;
     transition: all 0.5s ease-in-out;
     &:hover {
       background: #ff0000;
-      color: #1E161E;
+      color: white;
     }
   }
   &:focus {

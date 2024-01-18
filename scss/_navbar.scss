@@ -1,5 +1,5 @@
 .navbar {
-  background-color: #1E161E;
+  background-color: #f7f8fa;
   padding: 49px 0px 63px 0px;
   .navbar-toggler {
     line-height: inherit;
@@ -14,7 +14,7 @@
     .navbar-nav {
       .btn-contact-us {
         margin-left: 148px;
-        #1E161E-space: nowrap;
+        white-space: nowrap;
         @media (max-width: 992px) {
           margin-left: 0px;
         }
@@ -52,7 +52,7 @@
         position: fixed;
         top: 0;
         right: 0;
-        background: #1E161E; 
+        background: white; 
         z-index: 20;
         height: 100vh;
         padding: 50px 0px;
